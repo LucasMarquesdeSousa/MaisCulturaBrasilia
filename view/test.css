@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+/*    overflow: hidden;*/
+    width: 100%;
+    height: 100vh;
+}
+.container .slider{
+    position: absolute;
+    width: 500%;
+    height: 100%;
+    float: left;
+    animation: animate 10s linear infinite;
+}
+.container .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.container .slider .slide .caption{
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    padding: 30px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+}           
+.container .slider .slide .caption h2{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+}
+.container .slider .slide .caption p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+}
+.container .slider .slide.slide1{
+    background: url(imagem/logo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide2{
+    background: url(imagem/rose.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide3{
+    background: url(imagem/game.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animate{
+    0%{
+       left: 0; 
+    }
+    30%{
+       left: 0; 
+    }
+    35%{
+       left: -100%; 
+    }
+    65%{
+       left: -100%; 
+    }
+    70%{
+       left: -200%; 
+    }
+    100%{
+       left: -200%; 
+    }
+}

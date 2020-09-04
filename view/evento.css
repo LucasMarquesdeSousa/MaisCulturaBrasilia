@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#bg{               
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.9);
+   position: fixed;
+   display: none;
+}  
+            
+#bg:target{
+    display: block;
+}
+            
+#bg:target ~ .box{
+    top: 150px;
+    transition: all .3s;
+    transition-delay: .2;               
+}
+            
+.box{
+    width: 800px;
+    height: 1300px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top:-2320px;               
+}
+            
+.box nav1{
+    width: 800px;
+    height: 2000px;
+    position: absolute;
+    margin-top: -150px;
+    background-color: #e6f3ff;
+    font-size: 20px;
+    float: left;   
+    border-radius: 10px;
+}
+            
+#close{
+    color: #fff;
+    text-decoration: none;   
+    font-size: 30px;
+    position: absolute;
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 18px;
+    text-align: center;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#close:hover{
+    opacity: 0.6;
+}
+
+.cultura{
+    width: 450px;
+    height: 300px;
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.titulo{
+    margin-top: 20px;
+    background-color: rgba(0,0,0,.5);
+    font-size: 25px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+p{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+/*------------------------------------------*/
+#esp1{               
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.9);
+   position: fixed;
+   display: none;
+}  
+            
+#esp1:target{
+    display: block;
+}
+            
+#esp1:target ~ .box1{
+    top: 150px;
+    transition: all .3s;
+    transition-delay: .2;               
+}
+            
+.box1{
+    width: 800px;
+    height: 1300px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top:-2320px;               
+}
+            
+.box1 nav1{
+    width: 800px;
+    height: 158%;
+    position: absolute;
+    margin-top: -150px;
+    background-color: #e6f3ff;
+    font-size: 20px;
+    float: left;   
+    border-radius: 10px;
+}
+/*------------------------------------------*/
+
+#esp2{               
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.9);
+   position: fixed;
+   display: none;
+}  
+            
+#esp2:target{
+    display: block;
+}
+            
+#esp2:target ~ .box2{
+    top: 150px;
+    transition: all .3s;
+    transition-delay: .2;               
+}
+            
+.box2{
+    width: 800px;
+    height: 1300px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top:-2320px;               
+}
+            
+.box2 nav1{
+    width: 800px;
+    height: 2130px;
+    position: absolute;
+    margin-top: -150px;
+    background-color: #e6f3ff;
+    font-size: 20px;
+    float: left;   
+    border-radius: 10px;
+}
+
+/*------------------------------------------*/
+
+#esp3{               
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.9);
+   position: fixed;
+   display: none;
+}  
+            
+#esp3:target{
+    display: block;
+}
+            
+#esp3:target ~ .box3{
+    top: 150px;
+    transition: all .3s;
+    transition-delay: .2;               
+}
+            
+.box3{
+    width: 800px;
+    height: 1300px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top:-2320px;               
+}
+            
+.box3 nav1{
+    width: 800px;
+    height: 1700px;
+    position: absolute;
+    margin-top: -150px;
+    background-color: #e6f3ff;
+    font-size: 20px;
+    float: left;   
+    border-radius: 10px;
+}
+
+/*------------------------------------------*/
+/*EVENTO CULTURAL*/
+/*------------------------------------------*/
+
+#ev1{               
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.9);
+   position: fixed;
+   display: none;
+}  
+            
+#ev1:target{
+    display: block;
+}
+            
+#ev1:target ~ .box4{
+    top: 150px;
+    transition: all .3s;
+    transition-delay: .2;               
+}
+            
+.box4{
+    width: 800px;
+    height: 1300px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top:-2320px;               
+}
+            
+.box4 nav1{
+    width: 800px;
+    height: 1760px;
+    position: absolute;
+    margin-top: -150px;
+    background-color: #e6f3ff;
+    font-size: 20px;
+    float: left;   
+    border-radius: 10px;
+}
+/*------------------------------------------*/
+
+#ev2{               
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.9);
+   position: fixed;
+   display: none;
+}  
+            
+#ev2:target{
+    display: block;
+}
+            
+#ev2:target ~ .box5{
+    top: 150px;
+    transition: all .3s;
+    transition-delay: .2;               
+}
+            
+.box5{
+    width: 800px;
+    height: 1300px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top:-2320px;               
+}
+            
+.box5 nav1{
+    width: 800px;
+    height: 1820px;
+    position: absolute;
+    margin-top: -150px;
+    background-color: #e6f3ff;
+    font-size: 20px;
+    float: left;   
+    border-radius: 10px;
+}
+
+/*------------------------------------------*/
+
+#ev3{               
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.9);
+   position: fixed;
+   display: none;
+}  
+            
+#ev3:target{
+    display: block;
+}
+            
+#ev3:target ~ .box6{
+    top: 150px;
+    transition: all .3s;
+    transition-delay: .2;               
+}
+            
+.box6{
+    width: 800px;
+    height: 1300px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top:-2320px;               
+}
+            
+.box6 nav1{
+    width: 800px;
+    height: 1790px;
+    position: absolute;
+    margin-top: -150px;
+    background-color: #e6f3ff;
+    font-size: 20px;
+    float: left;   
+    border-radius: 10px;
+}
