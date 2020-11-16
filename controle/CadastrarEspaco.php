@@ -2,7 +2,7 @@
 require_once'../DAO/EspacoCulturalDAO.php';
 require_once'../DTO/EspacoCultural.php';
 SESSION_START();
-$nome = htmlspecialchars($_POST["nome"]);
+$nome = htmlspecialchars($_POST["nome"]) ;
 $descricao = htmlspecialchars($_POST["descricao"]);
 $local = htmlspecialchars($_POST["local"]);
 $data = htmlspecialchars($_POST["data"]);

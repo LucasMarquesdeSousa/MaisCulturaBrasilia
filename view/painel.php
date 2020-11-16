@@ -81,7 +81,7 @@ if ($perfil == 1) {
             <div class="container">
                 <nav>
                     <ul class="menu">
-                        <a href=" ../view/index1.php"><li>Página Inicial</li></a>  
+                        <a href=" ../index.php"><li>Página Inicial</li></a>  
                     <a href=" ../view/painel.php"><li  class="com">Usuários</li></a> 
                     <a href="../view/listarEventos.php"><li>Eventos Culturais</li></a> 
                     <a href="../view/listarEspaco.php"><li>Espaços Culturais</li></a> 

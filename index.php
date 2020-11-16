@@ -7,14 +7,14 @@
         <!--<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/> -->
         <!--MODAL-->		
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-        <script src="../js/jquery.min.js"></script>
-        <script src="../js/popper.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!--MODAL-->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-        <script type="text/javascript" src="../controle/JavaScriptPesquisar.js"></script>
-        <link rel="stylesheet" type="text/css" href="../view/home.css"/>
-        <link rel="stylesheet" type="text/css" href="../view/evento.css"/>
+        <script type="text/javascript" src="controle/JavaScriptPesquisar.js"></script>
+        <link rel="stylesheet" type="text/css" href="view/home.css"/>
+        <link rel="stylesheet" type="text/css" href="view/evento.css"/>
     </head>
     <?php
     if (isset($_GET["msg1"])) {
@@ -29,7 +29,7 @@
         echo"alert('$msgs')";
         echo"</script>";
     }
-    require_once '../controle/MostrarDadosUsuarioLogado.php';
+    require_once 'controle/MostrarDadosUsuarioLogado.php';
     $mmmmm = new MostrarDadosUsuarioLogado();
     $mostrardados = $mmmmm->MostraDados();
     ?>  
@@ -57,9 +57,9 @@
         <section class="sec">
             <header class="container1">
                 <div class="banner">
-                    <a class="abc" href="index1.php"><img class="logo" width="80px" height="" src="../imagem/log0.jpg"></a>     
+                    <a class="abc" href="index1.php"><img class="logo" width="80px" height="" src="imagem/log0.jpg"></a>     
                     <div class="menu">
-                        <form action="../controle/PesquisarEvento.php" method="POST" id="form_pesquisa">
+                        <form action="controle/PesquisarEvento.php" method="POST" id="form_pesquisa">
                             <input name="pesquisando" type="text" id="search" class="search" placeholder="Pesquise aqui seu evento!">            
                             <font color="white">
                             <ul> <li class="resultado"></li></ul>
@@ -80,14 +80,14 @@
                                         <a class='dropada'>Perfil</a>
                                         <ul>
                                             <li class='dropada'>
-                                                <a href='../controle/EfetuarLogoff.php' onclick='return Sair();'>Sair</a>
+                                                <a href='controle/EfetuarLogoff.php' onclick='return Sair();'>Sair</a>
                                             </li>
                                             <li class='dropada'>
-                                                <a href='../view/EditaUsuario.php?id=<?= $mostrardados[2] ?>'>Editar</a>
+                                                <a href='view/EditaUsuario.php?id=<?= $mostrardados[2] ?>'>Editar</a>
                                             </li>
                                             <li class='dropada'>
                                                 <?php if ($mostrardados[1] == 2) { ?>
-                                                    <form action='../controle/ExcluirUsuario.php' method='POST'>                            
+                                                    <form action='controle/ExcluirUsuario.php' method='POST'>                            
                                                         <input type='hidden' value='<?= $mostrardados[2] ?>' name='cpf'/>
                                                         <button  class='haha' onclick='return ExcluirUsu();'><input class='haha' type='hidden' value='' />Excluir Conta</button>
                                                     </form>
@@ -95,7 +95,7 @@
                                                 }
                                                 if ($mostrardados[1] == 1) {
                                                     ?>
-                                                    <a href='../view/Painel.php'> Painel </a>
+                                                    <a href='view/Painel.php'> Painel </a>
                                                     <?php
                                                 }
                                                 ?>
@@ -106,8 +106,8 @@
                                 </ul>
                             <?php } else {
                                 ?>
-                                <a href='../view/entrar.php'><button type='button' class='btn11'>Entrar</button></a> 
-                                <a href='../view/cadastrar.php'><button type='button' class='btn11'>Cadastar</button></a>
+                                <a href='view/entrar.php'><button type='button' class='btn11'>Entrar</button></a> 
+                                <a href='view/cadastrar.php'><button type='button' class='btn11'>Cadastar</button></a>
                                 <?php
                             }
                             ?>
@@ -116,7 +116,7 @@
                     </div>
                 </div>         
                 <nav class="menu3">
-                    <a class="aa" href="index1.php">Página inicial</a>
+                    <a class="aa" href="index.php">Página inicial</a>
                     <a class="aa" href="#evnt">Eventos</a>
                     <a class="aa" href="#espc">Espaço Cultural</a>
                     <?php if ($mostrardados[0]) { ?>
@@ -155,7 +155,7 @@
                     ?>
                     <div class='car'>
                         <?php $imga = $us["foto"]; ?>
-                        <img src=' ../uploads_de_imagens/<?= $imga ?>'/>
+                        <img src='uploads_de_imagens/<?= $imga ?>'/>
                         <h1><?= $us["nome"] ?></h1>
                         <?php $mhs = $us["cod"]; ?>
                         <button type='button' class='btn111' data-toggle='modal' data-target='#myModal<?= $us["cod"] ?>'>Ler Mais</button>
@@ -168,8 +168,8 @@
             <h1 class="title" id="espc">Espaços Culturais</h1>
             <div class="evw">
                 <?php
-                include_once'../DAO/EspacoCulturalDAO.php';
-                include_once'../DAO/ComentarioDAO.php';
+                include_once'DAO/EspacoCulturalDAO.php';
+                include_once'DAO/ComentarioDAO.php';
                 $publicarEspaco = new EspacoCulturalDAO();
                 $publicas = $publicarEspaco->getAllEspaco();
 
@@ -178,7 +178,7 @@
                     <div class='car'>
                         <?php $imga = $rs["foto"]; ?>
                         <h1><?= $rs["nome"] ?></h1>
-                        <img src=' ../uploads_de_imagens/<?= $imga ?>'/>
+                        <img src='uploads_de_imagens/<?= $imga ?>'/>
                         <button type='button' class='btn111' data-toggle='modal' data-target='#myModa2<?= $rs["cod"] ?>'>Ler Mais</button>
                     </div>
                     <?php
@@ -189,7 +189,7 @@
             <div id="esp1"></div>
             <div class="box1">
                 <?php
-                include_once'../DAO/EspacoCulturalDAO.php';
+                include_once'DAO/EspacoCulturalDAO.php';
                 $parte4 = new EspacoCulturalDAO();
                 $mss = $parte4->getAllEspaco();
                 foreach ($mss as $hs) {
@@ -215,7 +215,7 @@
                                     <h1 class='titulo' align='center'>Comentários</h1><br>
                                     <br><br><br><br>
                                     <?php
-                                    include_once'../DAO/ComentarioDAO.php';
+                                    include_once'DAO/ComentarioDAO.php';
                                     $parte5 = new ComentarioDAO();
                                     $codi = $hs["cod"];
                                     $cpf = $hs["usuario_cpf"];
@@ -225,10 +225,10 @@
                                             ?>
                                             <br><b><?= $ll["nome"] ?> :</b><?= $ll["comentario"] ?>
                                             <?php if ($ll["nome"] == $mostrardados[0]) { ?>
-                                                <a href='../controle/ExcluirComentarioEspaco.php?id=<?= $ll["cod"] ?>' onclick='return ExcluirComentario();'><font color='black'>Excluir</font></a><br><hr>
+                                                <a href='controle/ExcluirComentarioEspaco.php?id=<?= $ll["cod"] ?>' onclick='return ExcluirComentario();'><font color='black'>Excluir</font></a><br><hr>
                                             <?php } else if ($mostrardados[1] == 1) {
                                                 ?>
-                                                <a href='../controle/ExcluirComentario.php?id=<?= $ll["cod"] ?>' onclick='return ExcluirComentario();'> <font color='black'>Excluir </font></a><br><hr>
+                                                <a href='controle/ExcluirComentario.php?id=<?= $ll["cod"] ?>' onclick='return ExcluirComentario();'> <font color='black'>Excluir </font></a><br><hr>
                                                 <?php
                                             }
                                         }
@@ -238,7 +238,7 @@
                                     ?>
                                     <br><br><br><br><br>
                                     <?php if ($mostrardados[2]) { ?>
-                                        <form action="../controle/ComentarioEspaco.php" method="POST">
+                                        <form action="controle/ComentarioEspaco.php" method="POST">
                                             <textarea  name="comentario" rows='4' cols='50' class='campo12' placeholder='Digite aqui seu comentário' required="required"></textarea><br>
                                             <input  type="hidden" value="<?= $hs["cod"] ?>" name="espaco"/>
                                             <button class='btn'>Enviar</button>
@@ -260,7 +260,7 @@
 
 
             <?php
-            include_once'../DAO/EventoDAO.php';
+            include_once'DAO/EventoDAO.php';
             if (isset($_GET["id"])) {
                 $id = $_GET["id"];
             } else {
@@ -288,13 +288,13 @@
                                 <?php
                                 $dt_nascimento = $mostrardados[3];
                                 $idade = $is["faixa_etaria"];
-                                require_once '../DAO/Idade.php';
+                                require_once 'DAO/Idade.php';
                                 $nova = new Idade();
                                 $nova2 = $nova->MenordeIdade($dt_nascimento, $idade);
                                 if ($nova2) {
                                     ?>
                                     <h1 class='titulo' align='center'><?= $is["nome"] ?></h1>            
-                                    <img class='cultura' src='../uploads_de_imagens/<?= $imga ?>'/>
+                                    <img class='cultura' src='uploads_de_imagens/<?= $imga ?>'/>
                                     <h1 class='titulo' align='center'>Um pouco da história</h1>
                                     <p align='center'> <?= $is["descricao"] ?></p>
                                     <h1 class='titulo' align='center'>Funcionamento</h1>
@@ -305,7 +305,7 @@
                                     <h1 class='titulo' align='center'>Comentários</h1>
                                     <br><br><br><br><br><br>
                                     <?php
-                                    include_once'../DAO/ComentarioDAO.php';
+                                    include_once'DAO/ComentarioDAO.php';
                                     $parte1 = new ComentarioDAO();
                                     $codi = $is["cod"];
                                     $cpf = $is["usuario_cpf"];
@@ -315,7 +315,7 @@
                                             ?>
                                             <br><hr><b><?= $kl["nome"] ?> :</b> <?= $kl["comentario"] ?>
                                             <?php if ($kl["nome"] == $mostrardados[0]) { ?>
-                                                <a href='../controle/ExcluirComentario.php?id=<?= $kl["cod"] ?>' onclick='return ExcluirComentario();'> <font color='black'>Excluir </font></a><br><hr>
+                                                <a href='controle/ExcluirComentario.php?id=<?= $kl["cod"] ?>' onclick='return ExcluirComentario();'> <font color='black'>Excluir </font></a><br><hr>
                                                 <?php
                                             }
                                         }
@@ -325,7 +325,7 @@
                                     ?>
                                     <br><br><br><br><br>
                                     <?php if ($mostrardados[2]) { ?>
-                                        <form  action="../controle/Comentario.php" method="POST">
+                                        <form  action="controle/Comentario.php" method="POST">
                                             <textarea  name="comentario" rows='4' cols='50' class='campo12' placeholder='Digite aqui seu comentário' required="required"></textarea><br>
                                             <input  type="hidden" value="<?= $is["cod"] ?>" name="evento">
                                             <input type="submit" value="Enviar" class="btn">

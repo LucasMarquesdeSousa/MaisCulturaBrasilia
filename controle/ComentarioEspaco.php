@@ -4,7 +4,7 @@ require_once '../DAO/ComentarioDAO.php';
 session_start();
 if (empty($_POST["comentario"])) {
     echo "<script>";
-    echo "window.location.href='../view/index1.php';";
+    echo "window.location.href='../index.php';";
     echo "</script>";
 } else {
     $comentario = $_POST["comentario"];

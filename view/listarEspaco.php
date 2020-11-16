@@ -31,7 +31,7 @@
        <div class="container">
             <nav>
                 <ul class="menu">
-                    <a href=" ../view/index1.php"><li>Página Inicial</li></a>  
+                    <a href=" ../index.php"><li>Página Inicial</li></a>  
                     <a href=" ../view/painel.php"><li>Usuários</li></a> 
                     <a href="../view/listarEventos.php"><li>Eventos Culturais</li></a> 
                     <a href="../view/listarEspaco.php"><li class="com">Espaços Culturais</li></a> 
@@ -61,7 +61,7 @@
                     $perfil="";
                 }
 	if($perfil == 1){
-            echo"<a class='aa' href='../view/cadastrarEspaco.php'>Cadastrar Espaço Cultural</a><hr>";
+            echo"<a class='aa' href='./cadastrarEspaco.php'>Cadastrar Espaço Cultural</a><hr>";
 		include_once'../DAO/EspacoCulturalDAO.php'; 
 		$mostrar = new EspacoCulturalDAO();
 		$amostra = $mostrar->getALLEspaco();

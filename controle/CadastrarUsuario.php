@@ -5,7 +5,7 @@ require_once '../DAO/UsuarioDAO.php';
 // metodos acessores
 require_once '../DTO/UsuarioDTO.php';
 
-$nome = htmlspecialchars($_POST["nome"]);
+$nome = htmlspecialchars($_POST["nome"]) ;
 $email = htmlspecialchars($_POST["email"]);
 $dtnascimento = htmlspecialchars($_POST["dtnascimento"]);  
 $cpf = md5($_POST["cpf"]);

@@ -176,10 +176,10 @@ ul.menu li {
          <div class="container">
             <section>
                 <div class="top"><br>
-                <a href="../view/index1.php"><img class="logo" align="left" src="../imagem/log0.jpg"></a>
+                <a href="../index.php"><img class="logo" align="left" src="../imagem/log0.jpg"></a>
                 <h1 class="nav1">BEM-VINDO!</h1>
                 <h2 class="nav2">Edite seu evento aqui</h2>
-                <a href="../view/index1.php" id="retornar">Retornar</a>
+                <a href="../index.php" id="retornar">Retornar</a>
                 <a href="../view/Editar_evento.php?id1=1" class="retornar"> seus eventos </a>
                 
                 <br></div><hr><br>                

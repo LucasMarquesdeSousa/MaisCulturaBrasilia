@@ -146,7 +146,7 @@
             <div class="container">
                 <section>
                     <div class="top"><br>
-                        <a href="../view/index1.php"><img class="logo" align="left" src="../imagem/log0.jpg"></a>
+                        <a href="../index.php"><img class="logo" align="left" src="../imagem/log0.jpg"></a>
                         <h1 class="nav1">BEM-VINDO!</h1>
                         <h2 class="nav2">Anuncie seu evento aqui</h2>
                         <h3 class="nav3"><font color="red">*<font color="blue">É necessário estar logado</font>*</font></h3>
@@ -156,7 +156,7 @@
                         $mostrarALL = $editarevent->getEventoUsuarioByCPF($cpf);
                         if ($mostrarALL):
                             ?>
-                            <a href="../view/index1.php" id="retornar">Retornar</a>
+                            <a href="../index.php" id="retornar">Retornar</a>
                             <a href="../view/Editar_evento.php" id="retornar">Editar</a>
                         <?php endif; ?>
                         <br></div><hr><br>                

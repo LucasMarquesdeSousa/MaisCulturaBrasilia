@@ -10,7 +10,7 @@ if ($_SESSION["perfil_cod"] == 1) {
 } else if ($excluido) {
     session_destroy();
     echo "<script>";
-    echo "window.location.href = '../view/index1.php';";
+    echo "window.location.href = '../index.php';";
     echo "</script> ";
 }
 

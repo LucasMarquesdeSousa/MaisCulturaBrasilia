@@ -58,10 +58,10 @@
                 <ul class="menu">
                     <?php if (isset($_SESSION["cpf"])): ?>
                         <a href="../view/cadastrar.php"><li>Cadastrar</li></a>
-                        <a href="../view/index1.php"><li>Página Inicial</li></a>
+                        <a href="../index.php"><li>Página Inicial</li></a>
                         <a href="../view/painel.php"><li>Painel</li></a>
                     <?php else: ?>
-                        <a href="../view/index1.php"><li>Página Inicial</li></a>
+                        <a href="../index.php"><li>Página Inicial</li></a>
                         <a href="../view/cadastrar.php"><li>Cadastrar</li></a>
                         <a href="../view/entrar.php"><li>Entrar</li></a>				                    
                     <?php endif; ?>

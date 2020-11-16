@@ -56,7 +56,7 @@
                     <ul class="menu">
                         <a href="cadastrar.php"><li>Cadastrar</li></a>
                         <a href="entrar.php"><li>Entrar</li></a>
-                        <a href="index1.php"><li>Página Inicial</li></a>
+                        <a href="../index.php"><li>Página Inicial</li></a>
                         <br>
                         <br>
 

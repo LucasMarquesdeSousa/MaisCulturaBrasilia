@@ -7,6 +7,6 @@ $excluirComentario = new ComentarioDAO();
 $excluido = $excluirComentario->ExcluirComentarioEspaco($cod);
 if($excluido){
 	echo"<script>";
-	echo"window.location.href='../view/index1.php';";
+	echo"window.location.href='../index.php';";
 	echo"</script>";
 }

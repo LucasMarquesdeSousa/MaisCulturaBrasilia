@@ -145,10 +145,10 @@ ul.menu li {
          <div class="container">
             <section>
                 <div class="top"><br>
-                <a href="../view/index1.php"><img class="logo" align="left" src="../imagem/log0.jpg"></a>
+                <a href="../index.php"><img class="logo" align="left" src="../imagem/log0.jpg"></a>
                 <h1 class="nav1">Painel</h1>
                 <h2 class="nav2">Cadastrar Espaço Cultural</h2>
-                <a href="../view/index1.php" id="retornar">Retornar</a>
+                <a href="../index.php" id="retornar">Retornar</a>
 				<a href="../view/CadastrarEspaco.php" id="retornar">Cadastrar</a>
                 <br></div><hr><br>   
 					

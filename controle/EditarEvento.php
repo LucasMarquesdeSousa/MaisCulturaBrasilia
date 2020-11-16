@@ -51,6 +51,6 @@ if ($edita) {
 } else {
     $msg = "Não foi possivel alterar esse evento!";
     echo"<script>";
-    echo"window.location.href='../view/index1.php?msg={$msg}';";
+    echo"window.location.href='../index.php?msg={$msg}';";
     echo"</script>";
 }

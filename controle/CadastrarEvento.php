@@ -2,7 +2,7 @@
 require_once '../DTO/eventodto.php';
 require_once '../DAO/EventoDAO.php';
 SESSION_START();
-$nome = htmlspecialchars($_POST["nome"]);
+$nome = htmlspecialchars($_POST["nome"]) ;
 $cpf = htmlspecialchars($_SESSION["cpf"]);
 //echo $cpf; die();
 $data = htmlspecialchars($_POST["data"]);

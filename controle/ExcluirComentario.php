@@ -20,7 +20,7 @@ if ($excluido) {
 
     } else {
         ?>
-        <script> window.location.href = '../view/index1.php';</script>
+        <script> window.location.href = '../index.php';</script>
         <?php
 
     }

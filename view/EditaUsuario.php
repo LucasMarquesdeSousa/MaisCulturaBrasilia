@@ -229,9 +229,9 @@
         <div class="container1">
             <section>
                 <div class="top"><br>
-                    <a href="../view/index1.php"><img class="logo"  align="left" src="../imagem/log0.jpg"></a>
+                    <a href="../index.php"><img class="logo"  align="left" src="../imagem/log0.jpg"></a>
                     <h1 align="center">Alterar</h1>
-                    <a href="../view/index1.php">Retornar</a>
+                    <a href="../index.php">Retornar</a>
                     <br></div><hr><br><br>
                 <div class="nn">
 

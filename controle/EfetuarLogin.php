@@ -31,7 +31,7 @@ if ($usuarios) {
     } else {
         $msg1 = "Seja bem-vindo, agora você pode publlicar o seu proprio evento";
         echo "<script>";
-        echo "window.location.href = '../view/index1.php?msgs={$msg1}';";
+        echo "window.location.href = '../index.php?msgs={$msg1}';";
         echo "</script>";
     }
 } else {
