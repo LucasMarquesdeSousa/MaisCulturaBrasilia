@@ -2,18 +2,18 @@
 require_once '../DTO/eventodto.php';
 require_once '../DAO/EventoDAO.php';
 SESSION_START();
-$nome = $_POST["nome"];
-$cpf = $_SESSION["cpf"];
+$nome = htmlspecialchars($_POST["nome"]);
+$cpf = htmlspecialchars($_SESSION["cpf"]);
 //echo $cpf; die();
-$data = $_POST["data"];
-$tel1 = $_POST["telefone"];
-$email = $_POST["email"];
+$data = htmlspecialchars($_POST["data"]);
+$tel1 = htmlspecialchars($_POST["telefone"]);
+$email = htmlspecialchars($_POST["email"]);
 //$nomeEvento = $_POST["nomeEvento"];
-$faixa_etaria = $_POST["faixa"];
-$local = $_POST["local"];
-$horario= $_POST["horario"];
-$artista = $_POST["artistas"];
-$descricao = $_POST["descricao"];
+$faixa_etaria = htmlspecialchars($_POST["faixa"]);
+$local = htmlspecialchars($_POST["local"]);
+$horario= htmlspecialchars($_POST["horario"]);
+$artista = htmlspecialchars($_POST["artistas"]);
+$descricao = htmlspecialchars($_POST["descricao"]);
 //$foto = $_POST["foto"];
 if($nome && $cpf && $tel1 && $email && $faixa_etaria && $local && $horario && $artista && $descricao){
             $evento = new Eventodto();

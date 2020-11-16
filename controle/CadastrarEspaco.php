@@ -2,16 +2,15 @@
 require_once'../DAO/EspacoCulturalDAO.php';
 require_once'../DTO/EspacoCultural.php';
 SESSION_START();
-$nome = $_POST["nome"];
-$descricao = $_POST["descricao"];
-$local = $_POST["local"];
-$data = $_POST["data"];
-$horario = $_POST["horario"];
+$nome = htmlspecialchars($_POST["nome"]);
+$descricao = htmlspecialchars($_POST["descricao"]);
+$local = htmlspecialchars($_POST["local"]);
+$data = htmlspecialchars($_POST["data"]);
+$horario = htmlspecialchars($_POST["horario"]);
 //$foto = $_FILE["foto"];
 if(isset($_SESSION["cpf"])){
-$cpf = $_SESSION["cpf"];
+	htmlspecialchars($cpf = $_SESSION["cpf"]);
 }else{$cpf= "";}
-
 
 $espacoDTO = new EspacoCultural();
 $espacoDTO->setNome($nome);
